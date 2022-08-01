@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FitnessController">
+   <children>
+      <Button layoutX="35.0" layoutY="332.0" mnemonicParsing="false" onAction="#Bmi" text="BMI calculator" />
+      <TableView fx:id="table_view" layoutX="23.0" layoutY="25.0" prefHeight="264.0" prefWidth="400.0">
+        <columns>
+          <TableColumn fx:id="duration" prefWidth="75.0" text="Duration" />
+          <TableColumn fx:id="distance" prefWidth="75.0" text="Distance" />
+          <TableColumn fx:id="calorie" prefWidth="75.0" text="Calorie" />
+          <TableColumn fx:id="steps" prefWidth="75.0" text="Steps" />
+          <TableColumn fx:id="date" prefWidth="75.0" text="Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="466.0" layoutY="249.0" mnemonicParsing="false" onAction="#Delete" text="Delete activity" />
+      <TextField fx:id="durationTextField" alignment="CENTER" layoutX="437.0" layoutY="25.0" promptText="Duration (hour)" />
+      <TextField fx:id="distanceTextField" alignment="CENTER" layoutX="437.0" layoutY="60.0" promptText="Distance (kilometer)" />
+      <TextField fx:id="calorieTextField" alignment="CENTER" layoutX="437.0" layoutY="95.0" promptText="Calorie" />
+      <TextField fx:id="stepsTextField" alignment="CENTER" layoutX="437.0" layoutY="130.0" promptText="Steps" />
+      <Button layoutX="472.0" layoutY="200.0" mnemonicParsing="false" onAction="#Add_activity" text="Add activity" />
+   </children>
+</AnchorPane>

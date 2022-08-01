@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BmiController">
+   <Button layoutX="516.0" layoutY="345.0" mnemonicParsing="false" onAction="#Back" text="Back" />
+   <Label layoutX="160.0" layoutY="109.0" text="Weight:" />
+   <TextField fx:id="weightTextField" layoutX="226.0" layoutY="105.0" promptText="Enter weight" />
+   <Label layoutX="160.0" layoutY="152.0" text="Height:" />
+   <TextField fx:id="heightTextField" layoutX="226.0" layoutY="148.0" promptText="Enter height" />
+   <Button layoutX="226.0" layoutY="207.0" mnemonicParsing="false" onAction="#Calculate" prefHeight="25.0" prefWidth="149.0" text="Calculate" />
+   <Label fx:id="bmi" alignment="CENTER" contentDisplay="CENTER" layoutX="154.0" layoutY="272.0" prefHeight="54.0" prefWidth="295.0" text="Your BMI is " textAlignment="CENTER" />
+   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="384.0" layoutY="109.0" prefHeight="17.0" prefWidth="62.0" text="kilogram" textAlignment="CENTER" />
+   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="384.0" layoutY="152.0" prefHeight="17.0" prefWidth="47.0" text="meter" textAlignment="CENTER" />
+</AnchorPane>
